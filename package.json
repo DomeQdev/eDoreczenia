@@ -1,0 +1,48 @@
+{
+    "name": "edoreczenia",
+    "version": "0.1.0",
+    "description": "Unofficial e-Doręczenia (edoreczenia.gov.pl) client with login.gov.pl / mObywatel QR sign-in",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DomeQdev/eDoreczenia.git"
+    },
+    "homepage": "https://github.com/DomeQdev/eDoreczenia#readme",
+    "bugs": {
+        "url": "https://github.com/DomeQdev/eDoreczenia/issues"
+    },
+    "type": "module",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+        },
+        "./package.json": "./package.json"
+    },
+    "files": [
+        "dist"
+    ],
+    "sideEffects": false,
+    "engines": {
+        "node": ">=20"
+    },
+    "keywords": [
+        "e-doreczenia",
+        "edoreczenia",
+        "epuap",
+        "mobywatel",
+        "login.gov.pl"
+    ],
+    "scripts": {
+        "build": "tsc -p tsconfig.build.json",
+        "typecheck": "tsc",
+        "test": "vitest run",
+        "prepare": "npm run build"
+    },
+    "devDependencies": {
+        "typescript": "^5.9.2",
+        "vitest": "^3.2.4"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "target": "es2022",
+        "lib": ["es2022", "dom", "dom.iterable"],
+        "types": [],
+        "module": "nodenext",
+        "moduleResolution": "nodenext",
+        "strict": true,
+        "noUncheckedIndexedAccess": true,
+        "noImplicitOverride": true,
+        "verbatimModuleSyntax": true,
+        "isolatedModules": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "noEmit": true
+    },
+    "include": ["src", "test"]
+}
